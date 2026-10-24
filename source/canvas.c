@@ -14,7 +14,14 @@
    Uniform names and attribute layout are checked at startup. No shader tools
    or game-specific shader compilation are required by the player. */
 extern const uint8_t render2d_shbin[];
-extern const uint32_t render2d_shbin_size;
+extern const uint8_t render2d_shbin_end[];
+/* bin2s -H makes _size a header-only constant in newer SDKs. Both SDK
+   layouts export the byte boundaries, so no private size variable is needed. */
+static uint32_t shader_binary_size(void){
+ uintptr_t first=(uintptr_t)render2d_shbin,last=(uintptr_t)render2d_shbin_end;
+ if(last<=first||last-first>65536u)return 0;
+ return (uint32_t)(last-first);
+}
 #define VERTEX_LIMIT 120000u
 #define TRANSFER_FLAGS (GX_TRANSFER_FLIP_VERT(0)|GX_TRANSFER_OUT_TILED(0)|GX_TRANSFER_RAW_COPY(0)|GX_TRANSFER_IN_FORMAT(GX_TRANSFER_FMT_RGBA8)|GX_TRANSFER_OUT_FORMAT(GX_TRANSFER_FMT_RGB8)|GX_TRANSFER_SCALING(GX_TRANSFER_SCALE_NO))
 typedef struct {float x,y,z,u,v;uint8_t color[4];} Vertex;
@@ -36,7 +43,8 @@ void sm_canvas_close(void){
 bool sm_canvas_init(void){
  if(gfxGetScreenFormat(GFX_TOP)!=GSP_BGR8_OES||gfxGetScreenFormat(GFX_BOTTOM)!=GSP_BGR8_OES)return false;
  if(!C3D_Init(0x100000))return false;initialized=true;
- shader=DVLB_ParseFile((uint32_t*)render2d_shbin,render2d_shbin_size);if(!shader)goto fail;
+ uint32_t shader_size=shader_binary_size();if(!shader_size)goto fail;
+ shader=DVLB_ParseFile((uint32_t*)render2d_shbin,shader_size);if(!shader)goto fail;
  shaderProgramInit(&program);shaderProgramSetVsh(&program,&shader->DVLE[0]);
  projection_loc=shaderInstanceGetUniformLocation(program.vertexShader,"projMtx");model_loc=shaderInstanceGetUniformLocation(program.vertexShader,"mdlvMtx");if(projection_loc<0||model_loc<0)goto fail;
  for(unsigned i=0;i<3;i++){targets[i]=C3D_RenderTargetCreate(240,i==2?320:400,GPU_RB_RGBA8,GPU_RB_DEPTH24_STENCIL8);if(!targets[i])goto fail;C3D_RenderTargetSetOutput(targets[i],i==2?GFX_BOTTOM:GFX_TOP,i==1?GFX_RIGHT:GFX_LEFT,TRANSFER_FLAGS);}
