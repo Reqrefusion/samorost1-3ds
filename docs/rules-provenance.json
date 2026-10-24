@@ -1,0 +1,14 @@
+{
+  "game": "Samorost 1 AIR 1.13.2",
+  "main_swf_sha256": "0ba23a7ca9c0d401a7439188c2407be5953e12a0c3ecbca5b792846aa0ff5b03",
+  "source_handlers": {
+    "scenes\\Lyzar.as": "2a01d8fe1ddeb40d4824f769e758059c8f995f5dcbc4a535371fcbc8fa16ac50",
+    "scenes\\Rybar.as": "ccd82a7d1cf73e36b5ad852d4535359814cba8a3d4f5af8831a60de759f1b2bf",
+    "scenes\\Start.as": "e685f2e9d60dece0ef18f39f2a6e7e2841dabd33cd9074cbf0be1d52c62ab8f0",
+    "scenes\\Strojovna.as": "1d0f2bfb03193da8399949d6061202536436a60546926dab9f7046faa94f687e",
+    "scenes\\Strom.as": "7b244fabd593bf701a7a228ed09886d2fae75d4db31409f387010d16fe110537",
+    "scenes\\Vcely.as": "03d5de7dec6a8f5054b31aa82447ac0342ab1e6c695983317901f53165d256af",
+    "scenes\\Vodarna.as": "abe4111aaeeb8d40f56366a5c41b19bf051ecdbb88f4963631d767f7a9646fe0"
+  },
+  "generated_sha256": "3ea9cc5881154fe30cbadcf6e76b2a5b844865cb1e3798a16cd544d2dda7989b"
+}

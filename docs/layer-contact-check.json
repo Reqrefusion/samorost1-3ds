@@ -1,0 +1,6 @@
+{
+  "scope": "first-pose opaque overlap, six interactive scenes",
+  "pair_checks": 2240,
+  "threshold": "plane difference >0.15, overlap >=5 pixels",
+  "candidates": []
+}

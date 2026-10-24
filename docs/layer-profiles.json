@@ -1,0 +1,600 @@
+{
+  "version": 1,
+  "notes": [
+    "Depth values are artistic profiles, not recovered physical measurements.",
+    "Named actors own all animated descendants. Connected photographic fragments share a plane."
+  ],
+  "scenes": {
+    "Start": {
+      "root": 620,
+      "plane": -0.3,
+      "relief": 0.5,
+      "groups": [
+        {
+          "label": "credits",
+          "group": "OVERLAY",
+          "plane": 0,
+          "relief": 0,
+          "names": [],
+          "images": [],
+          "sprites": [
+            600
+          ],
+          "detached": true,
+          "reason": "Credits remain at the screen plane; flight profiles are defined separately"
+        }
+      ],
+      "extra_roots": [
+        616
+      ]
+    },
+    "Lyzar": {
+      "root": 676,
+      "plane": -0.3,
+      "relief": 0.5,
+      "groups": [
+        {
+          "label": "collectors on moss",
+          "group": "ACTOR",
+          "plane": -0.24,
+          "relief": 0,
+          "names": [
+            "Sberac1",
+            "Sberac2",
+            "Sberac3",
+            "Sberac4",
+            "Sberac5",
+            "Sberac6",
+            "Sberac7"
+          ],
+          "images": [],
+          "sprites": [],
+          "detached": false,
+          "reason": "Keep connected poses and parts on the same anchor"
+        },
+        {
+          "label": "zipline, carrier and lock",
+          "group": "CONTACT",
+          "plane": -0.16,
+          "relief": 0,
+          "names": [
+            "Cedulka",
+            "Lyzar",
+            "Cudl"
+          ],
+          "images": [
+            1786,
+            1788,
+            1790,
+            1787,
+            1789,
+            1662,
+            1664,
+            1777
+          ],
+          "sprites": [
+            638,
+            675
+          ],
+          "detached": false,
+          "reason": "Keep connected poses and parts on the same anchor"
+        },
+        {
+          "label": "smoker, hand, chair, shadow and pipe",
+          "group": "CONTACT",
+          "plane": -0.05,
+          "relief": 0,
+          "names": [
+            "Tabak",
+            "Kurak",
+            "Kour"
+          ],
+          "images": [
+            1302,
+            1301,
+            1497
+          ],
+          "sprites": [
+            642
+          ],
+          "detached": false,
+          "reason": "Chair shadow and detached hand must follow the smoker assembly"
+        }
+      ]
+    },
+    "Rybar": {
+      "root": 782,
+      "plane": -0.4,
+      "relief": 0.5,
+      "groups": [
+        {
+          "label": "fisher and fishing equipment",
+          "group": "ACTOR",
+          "plane": -0.3,
+          "relief": 0,
+          "names": [
+            "Rybar",
+            "Voda",
+            "Kostricka",
+            "Kour"
+          ],
+          "images": [],
+          "sprites": [],
+          "detached": false,
+          "reason": "Keep connected poses and parts on the same anchor"
+        },
+        {
+          "label": "newts and goats on the plate",
+          "group": "ACTOR",
+          "plane": -0.28,
+          "relief": 0,
+          "names": [
+            "Mloci",
+            "Koza1",
+            "Koza2",
+            "Koza3",
+            "Mlok1",
+            "Mlok2",
+            "Mlok3",
+            "Mlok4",
+            "Mlok5",
+            "Mlok6"
+          ],
+          "images": [],
+          "sprites": [],
+          "detached": false,
+          "reason": "Keep connected poses and parts on the same anchor"
+        },
+        {
+          "label": "bee in front of the plate",
+          "group": "SWARM",
+          "plane": 0.08,
+          "relief": 0,
+          "names": [
+            "Vcela"
+          ],
+          "images": [],
+          "sprites": [],
+          "detached": false,
+          "reason": "Keep connected poses and parts on the same anchor"
+        },
+        {
+          "label": "waiting passenger",
+          "group": "ACTOR",
+          "plane": 0.1,
+          "relief": 0,
+          "names": [
+            "Lyzar"
+          ],
+          "images": [],
+          "sprites": [],
+          "detached": false,
+          "reason": "Matches the perched bird before the passenger is replaced inside the flight group"
+        }
+      ]
+    },
+    "Vcely": {
+      "root": 646,
+      "plane": -0.3,
+      "relief": 0.5,
+      "groups": [
+        {
+          "label": "lift, support and passenger",
+          "group": "LIFT",
+          "plane": 0.02,
+          "relief": 0,
+          "names": [
+            "Gondola",
+            "GondolaObj",
+            "Skret"
+          ],
+          "images": [
+            1839
+          ],
+          "sprites": [
+            625
+          ],
+          "detached": false,
+          "reason": "Keep connected poses and parts on the same anchor"
+        },
+        {
+          "label": "tree, trunk cover and articulated sucker",
+          "group": "CONTACT",
+          "plane": -0.3,
+          "relief": 0,
+          "names": [
+            "Strom",
+            "Sosak",
+            "SosakTam",
+            "KrytkaSosakStrom",
+            "Zasek"
+          ],
+          "images": [
+            1838
+          ],
+          "sprites": [
+            610,
+            620
+          ],
+          "detached": false,
+          "reason": "Keep connected poses and parts on the same anchor"
+        },
+        {
+          "label": "snail on bark",
+          "group": "ACTOR",
+          "plane": -0.2,
+          "relief": 0,
+          "names": [
+            "SnekLeze",
+            "Snek"
+          ],
+          "images": [],
+          "sprites": [],
+          "detached": false,
+          "reason": "Keep connected poses and parts on the same anchor"
+        },
+        {
+          "label": "flowers and pollinating swarm",
+          "group": "SWARM",
+          "plane": 0.18,
+          "relief": 0,
+          "names": [
+            "Kvety",
+            "Vcely"
+          ],
+          "images": [],
+          "sprites": [],
+          "detached": false,
+          "reason": "Keep connected poses and parts on the same anchor"
+        },
+        {
+          "label": "bulb, light and switch",
+          "group": "MACHINE",
+          "plane": -0.12,
+          "relief": 0,
+          "names": [
+            "Zarovka",
+            "Svetlo",
+            "Vypinac"
+          ],
+          "images": [],
+          "sprites": [],
+          "detached": false,
+          "reason": "Keep connected poses and parts on the same anchor"
+        },
+        {
+          "label": "skull and small ambient motion",
+          "group": "SCENERY",
+          "plane": -0.26,
+          "relief": 0,
+          "names": [
+            "Lebka"
+          ],
+          "images": [],
+          "sprites": [
+            645
+          ],
+          "detached": false,
+          "reason": "Keep connected poses and parts on the same anchor"
+        }
+      ]
+    },
+    "Strom": {
+      "root": 652,
+      "plane": -0.35,
+      "relief": 0.5,
+      "groups": [
+        {
+          "label": "front hollow cover, record player, cabinet and squirrel",
+          "group": "CONTACT",
+          "plane": -0.1,
+          "relief": 0,
+          "names": [
+            "Gramec",
+            "Veverka",
+            "Dutina"
+          ],
+          "images": [
+            1312
+          ],
+          "sprites": [],
+          "detached": false,
+          "reason": "The hollow cover overlaps the cabinet and squirrel; they share a front contact plane"
+        },
+        {
+          "label": "rear bark plate",
+          "group": "SCENERY",
+          "plane": -0.35,
+          "relief": 0,
+          "names": [],
+          "images": [
+            1301
+          ],
+          "sprites": [],
+          "detached": false,
+          "reason": "Keep connected poses and parts on the same anchor"
+        },
+        {
+          "label": "branch, rope, gondola, owl and passenger",
+          "group": "CONTACT",
+          "plane": -0.08,
+          "relief": 0,
+          "names": [
+            "Lano",
+            "Gondola",
+            "Vetev",
+            "SovaPozice",
+            "Sova",
+            "Skret"
+          ],
+          "images": [
+            1302,
+            1305
+          ],
+          "sprites": [],
+          "detached": false,
+          "reason": "Keep connected poses and parts on the same anchor"
+        },
+        {
+          "label": "woodpecker and worms",
+          "group": "ACTOR",
+          "plane": -0.2,
+          "relief": 0,
+          "names": [
+            "Datel",
+            "Cerv1",
+            "Cerv2",
+            "Cerv3",
+            "Cerv4"
+          ],
+          "images": [],
+          "sprites": [],
+          "detached": false,
+          "reason": "Keep connected poses and parts on the same anchor"
+        },
+        {
+          "label": "small background motion",
+          "group": "SCENERY",
+          "plane": -0.35,
+          "relief": 0,
+          "names": [],
+          "images": [],
+          "sprites": [
+            600
+          ],
+          "detached": false,
+          "reason": "Keep connected poses and parts on the same anchor"
+        }
+      ]
+    },
+    "Vodarna": {
+      "root": 634,
+      "plane": -0.4,
+      "relief": 0.5,
+      "groups": [
+        {
+          "label": "rock abutment at the bridge",
+          "group": "CONTACT",
+          "plane": -0.12,
+          "relief": 0,
+          "names": [],
+          "images": [
+            1301
+          ],
+          "sprites": [],
+          "detached": false,
+          "reason": "Opaque rock pixels cover the railings: use the bridge contact plane rather than a distant plane"
+        },
+        {
+          "label": "bridge, railings, crank, ants and hero",
+          "group": "CONTACT",
+          "plane": -0.12,
+          "relief": 0,
+          "names": [
+            "Mravenec",
+            "Mravec",
+            "Klika",
+            "Skret",
+            "GondolaPad",
+            "Gondola"
+          ],
+          "images": [
+            1312,
+            1315,
+            1445,
+            1353,
+            1542,
+            1311,
+            1404
+          ],
+          "sprites": [],
+          "detached": false,
+          "reason": "Keep connected poses and parts on the same anchor"
+        },
+        {
+          "label": "door at the back of the bridge",
+          "group": "MACHINE",
+          "plane": -0.08,
+          "relief": 0,
+          "names": [
+            "Dvere"
+          ],
+          "images": [],
+          "sprites": [],
+          "detached": false,
+          "reason": "Door remains in front of the hero when the original display order moves him behind it"
+        },
+        {
+          "label": "switchboard and all six knobs",
+          "group": "MACHINE",
+          "plane": -0.18,
+          "relief": 0,
+          "names": [
+            "Rozvadec",
+            "Knob1",
+            "Knob2",
+            "Knob3",
+            "Knob4",
+            "Knob5",
+            "Knob6"
+          ],
+          "images": [],
+          "sprites": [],
+          "detached": false,
+          "reason": "Keep connected poses and parts on the same anchor"
+        },
+        {
+          "label": "mushroom stems and caps",
+          "group": "ACTOR",
+          "plane": -0.1,
+          "relief": 0,
+          "names": [
+            "Houba1",
+            "Houba2",
+            "Houba3",
+            "Houba4",
+            "Houba5",
+            "Houba6",
+            "Houba7",
+            "Houba8",
+            "Houba9",
+            "Houba10"
+          ],
+          "images": [],
+          "sprites": [],
+          "detached": false,
+          "reason": "Keep connected poses and parts on the same anchor"
+        },
+        {
+          "label": "first moth",
+          "group": "SWARM",
+          "plane": 0.05,
+          "relief": 0,
+          "names": [
+            "Mura2"
+          ],
+          "images": [],
+          "sprites": [],
+          "detached": false,
+          "reason": "Keep connected poses and parts on the same anchor"
+        },
+        {
+          "label": "second moth",
+          "group": "SWARM",
+          "plane": 0.1,
+          "relief": 0,
+          "names": [
+            "Mura1"
+          ],
+          "images": [],
+          "sprites": [],
+          "detached": false,
+          "reason": "Keep connected poses and parts on the same anchor"
+        }
+      ]
+    },
+    "Strojovna": {
+      "root": 641,
+      "plane": -0.45,
+      "relief": 0.35,
+      "groups": [
+        {
+          "label": "wall panels",
+          "group": "SCENERY",
+          "plane": -0.45,
+          "relief": 0.35,
+          "names": [],
+          "images": [
+            1492,
+            1493,
+            1302,
+            1303
+          ],
+          "sprites": [],
+          "detached": false,
+          "reason": "Keep connected poses and parts on the same anchor"
+        },
+        {
+          "label": "connected machine, wheel shadow, ladder, dials, labels and hero",
+          "group": "MACHINE",
+          "plane": -0.1,
+          "relief": 0,
+          "names": [
+            "KoloStin",
+            "Kolo",
+            "Zebrik",
+            "Paka",
+            "Skret",
+            "Rafika1",
+            "Rafika2",
+            "Vypinac",
+            "Dioda",
+            "BtnPlus",
+            "BtnMinus",
+            "BtnZebr",
+            "BtnKour1",
+            "BtnKour2",
+            "BtnKour3",
+            "Kour0",
+            "Kour1",
+            "Kour2",
+            "Kour3"
+          ],
+          "images": [
+            1307,
+            1314,
+            1305,
+            1424,
+            1301,
+            1308,
+            1310,
+            1426,
+            1414,
+            1491,
+            1490,
+            1439,
+            1304,
+            1309,
+            1311,
+            1468
+          ],
+          "sprites": [],
+          "detached": false,
+          "reason": "Keep connected poses and parts on the same anchor"
+        },
+        {
+          "label": "hanging bulb and its light",
+          "group": "LIGHT",
+          "plane": 0.06,
+          "relief": 0,
+          "names": [
+            "Svetlo"
+          ],
+          "images": [
+            1488
+          ],
+          "sprites": [],
+          "detached": false,
+          "reason": "Keep connected poses and parts on the same anchor"
+        },
+        {
+          "label": "exterior planet rotation",
+          "group": "PLANET",
+          "plane": -0.2,
+          "relief": 0.65,
+          "names": [],
+          "images": [],
+          "sprites": [
+            601
+          ],
+          "detached": true,
+          "reason": "Keep connected poses and parts on the same anchor"
+        }
+      ]
+    }
+  },
+  "animated_handoffs": [
+    "Rybar passenger blends from his waiting plane to the bird during jump frames 10..35.",
+    "Rybar bone blends to the incoming bird during arrival frames 200..246."
+  ]
+}

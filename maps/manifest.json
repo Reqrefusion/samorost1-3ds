@@ -1,0 +1,34 @@
+{
+  "format": 1,
+  "content": "geometry-only",
+  "files": {
+    "maps/depth/Lyzar.smd": {
+      "bytes": 951,
+      "sha256": "4d2a9ec743cfbac775b659033c79e900faca06c8ca1d04eae20aec1edb715225"
+    },
+    "maps/depth/Rybar.smd": {
+      "bytes": 356,
+      "sha256": "d2daa954ee32bc4594eb9d5b31d51763aabc284004413e9f8ebb46df77f48175"
+    },
+    "maps/depth/Start.smd": {
+      "bytes": 356,
+      "sha256": "0d7f6248b71e88402a4e921fccbf8c2dfc6bc9325f122e87868e54b3c8ac2f49"
+    },
+    "maps/depth/Strojovna.smd": {
+      "bytes": 1036,
+      "sha256": "f0730542d69bea373bac27a28276cbd6b976ea5eafb94e378c46357523e895c3"
+    },
+    "maps/depth/Strom.smd": {
+      "bytes": 441,
+      "sha256": "da89760a4aa34aee97d6bc58cdfa41b4a11132ecb62cb83aa3622911043ebc37"
+    },
+    "maps/depth/Vcely.smd": {
+      "bytes": 186,
+      "sha256": "1ed0ba51ef796161dfffcf5db635fd1e0a6a0c301f85b822bc2cceecc2830ab7"
+    },
+    "maps/depth/Vodarna.smd": {
+      "bytes": 186,
+      "sha256": "3f312a1ad3e8dedfed4a48d3afd8e20de88da7f2cadaea43fef824220d782f2e"
+    }
+  }
+}
